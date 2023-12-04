@@ -1,0 +1,93 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+    grid-template-columns: 9em 1fr;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(14, 14, 23);
+    color: white;
+    height: 3em;
+}
+
+h1 {
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin-top: 5px;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: rgb(172, 147, 198);
+}
+
+h3 {
+    text-align: center;
+}
+
+ul > li {
+    list-style: none;
+    line-height: 2.5em;
+    margin-left: -25px;
+    font-size: 0.9em;
+}
+
+span{
+    color: rgb(131, 131, 131);
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 15px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+h5 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    width: 57%;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(14, 14, 23);
+    color: white;
+}
